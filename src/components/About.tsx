@@ -1,13 +1,13 @@
+import AboutImg from "@/src/assets/about.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import AboutImg from "../assets/about.jpg";
 
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#66bd80]">
+          <p className="uppercase text-xl tracking-widest text-[color:var(--text-mainGreen)]">
             About
           </p>
           <h2 className="py-4">Who I Am</h2>

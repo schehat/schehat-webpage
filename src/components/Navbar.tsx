@@ -1,46 +1,90 @@
+import navLogo from "@/src/assets/navLogo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import navLogo from "../assets/navLogo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
 
   // toogle menu
   const handleNav = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src={navLogo} alt="/" width="140" height="50" />
+        <Link href="/">
+          <Image
+            src={navLogo}
+            alt="/"
+            width="125"
+            height="50"
+            className="cursor-pointer"
+          />
+        </Link>
         <div>
-          <ul className="hidden md:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#home" scroll={false}>
+                Home
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              {/* scroll={false} is for smooth scrolling no hard jump*/}
+              <Link href="/#about" scroll={false}>
+                About
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#skills" scroll={false}>
+                Skills
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#projects" scroll={false}>
                 Projects
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/resume">Resume</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#contact" scroll={false}>
                 Contact
-              </li>
-            </Link>
+              </Link>
+            </li>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          {/* Hamburger Icon */}
+          <div
+            style={{ color: `${linkColor}` }}
+            onClick={handleNav}
+            className="md:hidden"
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -93,7 +137,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#66bd80]">
+              <p className="uppercase tracking-widest text-[color:var(--text-mainGreen)]">
                 Let&apos;s Connect
               </p>
               {/* Icons */}

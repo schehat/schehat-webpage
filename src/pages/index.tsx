@@ -1,9 +1,11 @@
+import About from "@/src/components/About";
+import Main from "@/src/components/Main";
+import Navbar from "@/src/components/Navbar";
+import Projects from "@/src/components/Projects";
+import Skills from "@/src/components/Skills";
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import About from "../components/About";
-import Main from "../components/Main";
-import Navbar from "../components/Navbar";
-import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +22,8 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
+      <Projects />
+      <Contact />
     </>
   );
 }

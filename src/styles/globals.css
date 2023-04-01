@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
-}
-
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
   }
@@ -31,4 +30,9 @@ html {
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#66bd80] to-[#70ffac] text-white
   }
+}
+
+:root {
+  --text-mainGreen: #66bd80;
+  --text-secondGreen: #70ffac;
 }

@@ -1,6 +1,6 @@
-import { SkillItem } from "@/src/model/SkillItem";
+import { SkillsItem } from "@/src/model/SkillsItem";
 import Image from "next/image";
-const SkillItem = ({ src, alt, title }: SkillItem) => {
+const SkillsItem = ({ src, alt, title }: SkillsItem) => {
   return (
     <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
       <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -15,4 +15,4 @@ const SkillItem = ({ src, alt, title }: SkillItem) => {
   );
 };
 
-export default SkillItem;
+export default SkillsItem;
