@@ -16,7 +16,7 @@ const Projects = () => {
           <ProjectsItem
             title="Property Finder"
             backgroundImg={propertyImg}
-            projectUrl="/property"
+            projectUrl="/projects/property"
             tech="React JS"
           />
           <ProjectsItem

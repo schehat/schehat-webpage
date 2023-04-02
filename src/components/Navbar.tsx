@@ -1,6 +1,7 @@
 import navLogo from "@/src/assets/navLogo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -16,6 +17,24 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const [position, setPosition] = useState("fixed");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/projects/property" ||
+      router.asPath === "/projects/crypto" ||
+      router.asPath === "/projects/netflix" ||
+      router.asPath === "/projects/twitch"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   useEffect(() => {
     const handleShadow = () => {
@@ -106,7 +125,9 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image src={navLogo} width="120" height="35" alt="/" />
+              <Link href="/#home" scroll={false}>
+                <Image src={navLogo} width="120" height="35" alt="/" />
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray p-3 cursor-pointer"
@@ -120,20 +141,30 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+              <Link href="/#home" scroll={false}>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Home
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">About</li>
+              <Link href="/#about" scroll={false}>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+              <Link href="/#skills" scroll={false}>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Projects</li>
+              <Link href="/#projects" scroll={false}>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Projects
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+              <Link href="/#contact" scroll={false}>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">

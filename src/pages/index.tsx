@@ -1,6 +1,5 @@
 import About from "@/src/components/About";
 import Main from "@/src/components/Main";
-import Navbar from "@/src/components/Navbar";
 import Projects from "@/src/components/Projects";
 import Skills from "@/src/components/Skills";
 import { Inter } from "next/font/google";
@@ -18,7 +17,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Main />
       <About />
       <Skills />
