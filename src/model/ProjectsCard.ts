@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
 
-export type ProjectsItem = {
+export type ProjectsCard = {
     title: string, 
-    backgroundImg: StaticImageData, 
+    img: StaticImageData, 
     tech: string, 
     projectUrl: string
   }

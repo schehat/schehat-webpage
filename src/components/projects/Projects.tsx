@@ -2,7 +2,7 @@ import cryptoImg from "@/src/assets/projects/crypto.jpg";
 import netflixImg from "@/src/assets/projects/netflix.jpg";
 import propertyImg from "@/src/assets/projects/property.jpg";
 import twitchImg from "@/src/assets/projects/twitch.jpg";
-import ProjectsItem from "@/src/components/ProjectsItem";
+import ProjectsCard from "@/src/components/projects/ProjectsCard";
 
 const Projects = () => {
   return (
@@ -13,27 +13,27 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectsItem
+          <ProjectsCard
             title="Property Finder"
-            backgroundImg={propertyImg}
+            img={propertyImg}
             projectUrl="/projects/property"
             tech="React JS"
           />
-          <ProjectsItem
+          <ProjectsCard
             title="Crypto App"
-            backgroundImg={cryptoImg}
+            img={cryptoImg}
             projectUrl="/crypto"
             tech="React JS"
           />
-          <ProjectsItem
+          <ProjectsCard
             title="Netflix App"
-            backgroundImg={netflixImg}
+            img={netflixImg}
             projectUrl="/netflix"
             tech="React JS"
           />
-          <ProjectsItem
+          <ProjectsCard
             title="Twitch UI"
-            backgroundImg={twitchImg}
+            img={twitchImg}
             projectUrl="/twitch"
             tech="Next JS"
           />
