@@ -1,12 +1,5 @@
-import Css from "@/src/assets/skills/css.png";
-import Firebase from "@/src/assets/skills/firebase.png";
-import Github from "@/src/assets/skills/github1.png";
-import Html from "@/src/assets/skills/html.png";
-import Javascript from "@/src/assets/skills/javascript.png";
-import NextJS from "@/src/assets/skills/nextjs.png";
-import ReactImg from "@/src/assets/skills/react.png";
-import Tailwind from "@/src/assets/skills/tailwind.png";
 import SkillsCard from "@/src/components/skills/SkillsCard";
+import SkillsContent from "@/src/const/Skills";
 
 const Skills = () => {
   return (
@@ -17,14 +10,46 @@ const Skills = () => {
         </p>
         <h2 className="py-4">What I Can Do</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <SkillsCard src={Html} alt="/" title="HTML" />
-          <SkillsCard src={Css} alt="/" title="CSS" />
-          <SkillsCard src={Javascript} alt="/" title="JavaScript" />
-          <SkillsCard src={ReactImg} alt="/" title="React" />
-          <SkillsCard src={Tailwind} alt="/" title="Tailwind" />
-          <SkillsCard src={Firebase} alt="/" title="Firebase" />
-          <SkillsCard src={Github} alt="/" title="Github" />
-          <SkillsCard src={NextJS} alt="/" title="Next" />
+          <SkillsCard
+            src={SkillsContent.html.image}
+            alt="/"
+            title={SkillsContent.html.title}
+          />
+          <SkillsCard
+            src={SkillsContent.css.image}
+            alt="/"
+            title={SkillsContent.css.title}
+          />
+          <SkillsCard
+            src={SkillsContent.javascript.image}
+            alt="/"
+            title={SkillsContent.javascript.title}
+          />
+          <SkillsCard
+            src={SkillsContent.react.image}
+            alt="/"
+            title={SkillsContent.react.title}
+          />
+          <SkillsCard
+            src={SkillsContent.tailwind.image}
+            alt="/"
+            title={SkillsContent.tailwind.title}
+          />
+          <SkillsCard
+            src={SkillsContent.firebase.image}
+            alt="/"
+            title={SkillsContent.firebase.title}
+          />
+          <SkillsCard
+            src={SkillsContent.github.image}
+            alt="/"
+            title={SkillsContent.github.title}
+          />
+          <SkillsCard
+            src={SkillsContent.nextjs.image}
+            alt="/"
+            title={SkillsContent.nextjs.title}
+          />
         </div>
       </div>
     </div>

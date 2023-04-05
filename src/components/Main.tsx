@@ -1,7 +1,8 @@
+import MainContent from "@/src/const/Main";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import LinksUrl from "../const/LinksUrl";
 
 const Main = () => {
   return (
@@ -9,32 +10,25 @@ const Main = () => {
       <div className="=max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
-            LET&apos;S DO SOMETHING TOGETHER
+            {MainContent.upper_text}
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I am{" "}
-            <span className="text-[color:var(--text-mainGreen)]">Schehat</span>
+            {MainContent.greetings}
+            <span className="text-[color:var(--text-mainGreen)]">
+              {MainContent.first_name}
+            </span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Computer Science Student </h1>
+          <h1 className="py-2 text-gray-700">{MainContent.profession}</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I am passionate about learning and technologies that allow me to
-            bring ideas to reality
+            {MainContent.lower_text}
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <a
-              href="https://www.linkedin.com/in/schehat-abdel-kader/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={LinksUrl.linkedin} target="_blank" rel="noreferrer">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
             </a>
-            <a
-              href="https://github.com/schehat"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={LinksUrl.github} target="_blank" rel="noreferrer">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
@@ -42,11 +36,6 @@ const Main = () => {
             <Link href="/#contact">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
-              </div>
-            </Link>
-            <Link href="/resume">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill />
               </div>
             </Link>
           </div>

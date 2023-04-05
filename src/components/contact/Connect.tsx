@@ -1,5 +1,5 @@
 import ContactImg from "@/src/assets/contact.jpg";
-import Me from "@/src/const/about";
+import AboutContent from "@/src/const/About";
 import Image from "next/image";
 import SocialButtons from "../SocialButtons";
 
@@ -15,7 +15,7 @@ const Connect = () => {
           />
         </div>
         <div>
-          <h2 className="py-2">{Me.name}</h2>
+          <h2 className="py-2">{AboutContent.name}</h2>
           <p className="py-4">Let&apos;s connect and contact me</p>
         </div>
         <div>
