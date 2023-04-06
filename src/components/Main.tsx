@@ -1,14 +1,17 @@
 import MainContent from "@/src/const/Main";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import LinksUrl from "../const/LinksUrl";
+import SectionWrapper from "../hoc/SectionWrapper";
+import { textVariant } from "../utils/motion";
 
 const Main = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="=max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
+        <motion.div variants={textVariant(0)}>
           <p className="uppercase text-sm tracking-widest text-gray-600">
             {MainContent.upper_text}
           </p>
@@ -39,10 +42,10 @@ const Main = () => {
               </div>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
 };
 
-export default Main;
+export default SectionWrapper(Main, "main");

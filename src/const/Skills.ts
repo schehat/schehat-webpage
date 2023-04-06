@@ -42,6 +42,5 @@ const SkillsContent = {
         image: Tailwind
     }
 }
-  
 
 export default SkillsContent

@@ -4,6 +4,7 @@ import Projects from "@/src/components/projects/Projects";
 import Skills from "@/src/components/skills/Skills";
 import AboutContent from "@/src/const/About";
 import Head from "next/head";
+import Experience from "../components/Experience";
 import Contact from "../components/contact/Contact";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       </Head>
       <Main />
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <Contact />
