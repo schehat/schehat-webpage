@@ -2,7 +2,7 @@ import CodeButton from "@/src/components/projects/project/CodeButton";
 import ProjectDescription from "@/src/components/projects/project/ProjectDescription";
 import ProjectHeader from "@/src/components/projects/project/ProjectHeader";
 import TechnologyBar from "@/src/components/projects/project/TechnologyBar";
-import Property from "@/src/const/projects/Property";
+import Property from "@/src/constant/projects/Property";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowCircleLeft } from "react-icons/fa";

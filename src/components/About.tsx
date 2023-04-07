@@ -1,7 +1,7 @@
-import AboutContent from "@/src/const/About";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { imagesCommon } from "../constant/Images";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { textVariant } from "../utils/motion";
 
@@ -17,26 +17,34 @@ const About = () => {
             <p className="uppercase text-xl tracking-widest text-[color:var(--text-mainGreen)]">
               About
             </p>
-            <h2 className="py-4">{AboutContent.introduction}</h2>
+            <h2 className="py-4">Who I Am</h2>
           </div>
           <div className="md:flex md:flex-row md:items-start md:justify-between md:py-16">
             <div className="w-full md:w-1/2 px-2">
               <p className="py-2 text-gray-600">
-                {AboutContent.firstParagraph}
+                I began my programming journey in 2018 with web development,
+                then gradually expanded my knowledge by learning C# and Python
+                to grasp the core concepts of programming. In 2020, while
+                studying at university, I delved deeper into systems through
+                Java, C/C++, Unix, and databases. This newfound knowledge
+                enabled me to create software projects for assignments and
+                personal projects, and continue to improve my skills.
               </p>
               <p className="py-2 text-gray-600">
-                {AboutContent.secondParagraph}
+                In my spare time, I enjoy calisthenics and staying fit, as well
+                as playing video games and watching anime. Additionally, I have
+                a keen interest in the fields of machine learning and chess.
               </p>
               <Link href="/#projects">
                 <p className="py-2 text-gray-600 underline cursor-pointer">
-                  {AboutContent.reference}
+                  Check out some of my latest projects
                 </p>
               </Link>
             </div>
             <div className="w-full md:w-1/2 h-[450px] flex flex-col items-center justify-center shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
               <div className="h-full w-full">
                 <Image
-                  src={AboutContent.image}
+                  src={imagesCommon.about}
                   className="object-contain h-full rounded-xl"
                   alt="/"
                 />

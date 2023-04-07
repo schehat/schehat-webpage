@@ -1,9 +1,9 @@
-import navLogo from "@/src/assets/navLogo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { imagesCommon } from "../constant/Images";
 import MobileNavbar from "./navbar/MobileNavbar";
 
 const Navbar = () => {
@@ -58,7 +58,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image
-            src={navLogo}
+            src={imagesCommon.logo}
             alt="/"
             width="125"
             height="50"

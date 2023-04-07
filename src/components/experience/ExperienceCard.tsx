@@ -15,7 +15,7 @@ export const ExperienceCard = ({ experience }: any) => {
         <div className="flex justify-center items-center w-full h-full">
           <Image
             src={experience.icon}
-            alt={experience.company_name}
+            alt={experience.companyName}
             className="w-[80%] h-[80%] object-contain flex justify-center items-center"
           />
         </div>
@@ -27,7 +27,7 @@ export const ExperienceCard = ({ experience }: any) => {
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {experience.companyName}
         </p>
       </div>
 

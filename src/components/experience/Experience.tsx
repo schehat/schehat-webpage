@@ -1,10 +1,10 @@
 import { ExperienceCard } from "@/src/components/experience/ExperienceCard";
-import { experiences } from "@/src/const/Experience";
+import { experiences } from "@/src/constant/Experience";
 import { motion } from "framer-motion";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import SectionWrapper from "../hoc/SectionWrapper";
-import { textVariant } from "../utils/motion";
+import SectionWrapper from "../../hoc/SectionWrapper";
+import { textVariant } from "../../utils/motion";
 
 const Experience = () => {
   return (

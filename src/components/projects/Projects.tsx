@@ -1,8 +1,5 @@
-import cryptoImg from "@/src/assets/projects/crypto.jpg";
-import netflixImg from "@/src/assets/projects/netflix.jpg";
-import propertyImg from "@/src/assets/projects/property.jpg";
-import twitchImg from "@/src/assets/projects/twitch.jpg";
 import ProjectsCard from "@/src/components/projects/ProjectsCard";
+import { imagesProjects } from "@/src/constant/Images";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
@@ -19,25 +16,25 @@ const Projects = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectsCard
               title="Property Finder"
-              img={propertyImg}
+              img={imagesProjects.property}
               projectUrl="/projects/property"
               tech="React JS"
             />
             <ProjectsCard
               title="Crypto App"
-              img={cryptoImg}
+              img={imagesProjects.crypto}
               projectUrl="/crypto"
               tech="React JS"
             />
             <ProjectsCard
               title="Netflix App"
-              img={netflixImg}
+              img={imagesProjects.netflix}
               projectUrl="/netflix"
               tech="React JS"
             />
             <ProjectsCard
               title="Twitch UI"
-              img={twitchImg}
+              img={imagesProjects.twitch}
               projectUrl="/twitch"
               tech="Next JS"
             />

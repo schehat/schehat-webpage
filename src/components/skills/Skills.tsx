@@ -1,5 +1,5 @@
 import SkillsCard from "@/src/components/skills/SkillsCard";
-import SkillsContent from "@/src/const/Skills";
+import { skills } from "@/src/constant/Skills";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
@@ -13,46 +13,132 @@ const Skills = () => {
             Skills
           </p>
           <h2 className="py-4">What I Can Do</h2>
+          <h3 className="py-4">Programming Languages</h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <SkillsCard
-              src={SkillsContent.html.image}
+              src={skills.java.image}
               alt="/"
-              title={SkillsContent.html.title}
+              title={skills.java.title}
             />
             <SkillsCard
-              src={SkillsContent.css.image}
+              src={skills.cpp.image}
               alt="/"
-              title={SkillsContent.css.title}
+              title={skills.cpp.title}
             />
             <SkillsCard
-              src={SkillsContent.javascript.image}
+              src={skills.python.image}
               alt="/"
-              title={SkillsContent.javascript.title}
+              title={skills.python.title}
             />
             <SkillsCard
-              src={SkillsContent.react.image}
+              src={skills.sql.image}
               alt="/"
-              title={SkillsContent.react.title}
+              title={skills.sql.title}
             />
             <SkillsCard
-              src={SkillsContent.tailwind.image}
+              src={skills.javascript.image}
               alt="/"
-              title={SkillsContent.tailwind.title}
+              title={skills.javascript.title}
             />
             <SkillsCard
-              src={SkillsContent.firebase.image}
+              src={skills.typescript.image}
               alt="/"
-              title={SkillsContent.firebase.title}
+              title={skills.typescript.title}
+            />
+          </div>
+          <h3 className="py-4">Tools</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <SkillsCard
+              src={skills.git.image}
+              alt="/"
+              title={skills.git.title}
             />
             <SkillsCard
-              src={SkillsContent.github.image}
+              src={skills.linux.image}
               alt="/"
-              title={SkillsContent.github.title}
+              title={skills.linux.title}
+            />
+          </div>
+          <h3 className="py-4">Databases</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <SkillsCard
+              src={skills.mysql.image}
+              alt="/"
+              title={skills.mysql.title}
             />
             <SkillsCard
-              src={SkillsContent.nextjs.image}
+              src={skills.mongodb.image}
               alt="/"
-              title={SkillsContent.nextjs.title}
+              title={skills.mongodb.title}
+            />
+          </div>
+          <h3 className="py-4">Frontend Development</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <SkillsCard
+              src={skills.react.image}
+              alt="/"
+              title={skills.react.title}
+            />
+            <SkillsCard
+              src={skills.nextjs.image}
+              alt="/"
+              title={skills.nextjs.title}
+            />
+            <SkillsCard
+              src={skills.tailwind.image}
+              alt="/"
+              title={skills.tailwind.title}
+            />
+            <SkillsCard
+              src={skills.firebase.image}
+              alt="/"
+              title={skills.firebase.title}
+            />
+          </div>
+          <h3 className="py-4">Backend Development</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <SkillsCard
+              src={skills.nestjs.image}
+              alt="/"
+              title={skills.nestjs.title}
+            />
+            <SkillsCard
+              src={skills.nodejs.image}
+              alt="/"
+              title={skills.nodejs.title}
+            />
+            <SkillsCard
+              src={skills.jdbc.image}
+              alt="/"
+              title={skills.jdbc.title}
+            />
+            <SkillsCard
+              src={skills.hibernate.image}
+              alt="/"
+              title={skills.hibernate.title}
+            />
+          </div>
+          <h3 className="py-4">Data Science</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <SkillsCard
+              src={skills.numpy.image}
+              alt="/"
+              title={skills.numpy.title}
+            />
+            <SkillsCard
+              src={skills.pandas.image}
+              alt="/"
+              title={skills.pandas.title}
+            />
+            <SkillsCard
+              src={skills.matplotlib.image}
+              alt="/"
+              title={skills.matplotlib.title}
+            />
+            <SkillsCard
+              src={skills.scikitLearn.image}
+              alt="/"
+              title={skills.scikitLearn.title}
             />
           </div>
         </motion.div>
