@@ -6,6 +6,6 @@ export type Project = {
   technologyMain: string;
   description: string;
   codeUrl: string;
-  demoUrl?: string;
+  demoUrl: string;
   technologyAll: string[];
 };

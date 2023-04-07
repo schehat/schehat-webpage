@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
 
-export type Experience = {
+export type Education = {
     title: string,
-    companyName: string,
+    institution: string,
     icon: StaticImageData,
     iconBg: string,
     date: string,

@@ -1,9 +1,10 @@
 import About from "@/src/components/About";
 import Main from "@/src/components/Main";
+import Education from "@/src/components/education/Education";
+import Experience from "@/src/components/experience/Experience";
 import Projects from "@/src/components/projects/Projects";
 import Skills from "@/src/components/skills/Skills";
 import Head from "next/head";
-import Experience from "../components/experience/Experience";
 import Contact from "../components/contact/Contact";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       </Head>
       <Main />
       <About />
+      <Education />
       <Experience />
       <Skills />
       <Projects />

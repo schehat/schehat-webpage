@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { imagesCommon } from "../constant/Images";
-import MobileNavbar from "./navbar/MobileNavbar";
+import { imagesCommon } from "../../constant/Images";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -21,12 +21,8 @@ const Navbar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (
-      router.asPath === "/projects/property" ||
-      router.asPath === "/projects/crypto" ||
-      router.asPath === "/projects/netflix" ||
-      router.asPath === "/projects/twitch"
-    ) {
+    const projectsRegex = /^\/projects\/.*/;
+    if (projectsRegex.test(router.asPath)) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {

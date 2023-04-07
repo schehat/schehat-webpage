@@ -1,5 +1,6 @@
 import ProjectsCard from "@/src/components/projects/ProjectsCard";
 import { imagesProjects } from "@/src/constant/Images";
+import { ChessScene } from "@/src/constant/Projects";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
@@ -19,12 +20,12 @@ const Projects = () => {
               img={imagesProjects.property}
               projectUrl="/projects/property"
               tech="React JS"
-            />
+            ></ProjectsCard>
             <ProjectsCard
-              title="Crypto App"
-              img={imagesProjects.crypto}
-              projectUrl="/crypto"
-              tech="React JS"
+              title={ChessScene.title}
+              img={ChessScene.imgUrl}
+              projectUrl="/projects/chess_scene"
+              tech={ChessScene.technologyMain}
             />
             <ProjectsCard
               title="Netflix App"

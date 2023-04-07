@@ -34,6 +34,7 @@ const About = () => {
                 In my spare time, I enjoy calisthenics and staying fit, as well
                 as playing video games and watching anime. Additionally, I have
                 a keen interest in the fields of machine learning and chess.
+                Besides I try new things out like this webpage :D
               </p>
               <Link href="/#projects">
                 <p className="py-2 text-gray-600 underline cursor-pointer">
@@ -44,7 +45,7 @@ const About = () => {
             <div className="w-full md:w-1/2 h-[450px] flex flex-col items-center justify-center shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">
               <div className="h-full w-full">
                 <Image
-                  src={imagesCommon.about}
+                  src={imagesCommon.profile}
                   className="object-contain h-full rounded-xl"
                   alt="/"
                 />

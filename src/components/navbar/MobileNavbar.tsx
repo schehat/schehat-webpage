@@ -1,4 +1,4 @@
-import navLogo from "@/src/assets/navLogo.png";
+import { imagesCommon } from "@/src/constant/Images";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
@@ -21,7 +21,7 @@ const MobileNavbar = ({ nav, handleNav, setNav }: any) => {
         <div>
           <div className="flex w-full items-center justify-between">
             <Link href="/#home" scroll={false}>
-              <Image src={navLogo} width="120" height="35" alt="/" />
+              <Image src={imagesCommon.logo} width="120" height="35" alt="/" />
             </Link>
             <div
               onClick={handleNav}

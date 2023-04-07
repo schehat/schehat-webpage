@@ -1,7 +1,8 @@
+import chessScene from "@/src/assets/projects/chess-scene.png";
 import propertyImg from "@/src/assets/projects/property.jpg";
 import { Project } from "@/src/model/Project";
 
-const Property : Project =  {
+export const Property : Project =  {
     imgUrl: propertyImg,
     title: "Property Finders",
     technologyMain: "React JS / Tailwind / Firebase",
@@ -18,4 +19,16 @@ const Property : Project =  {
     technologyAll: ["React", "Tailwind", "Javascript", "Firebase", "Google API", "Zillow API"]
 }
 
-export default Property
+export const ChessScene : Project =  {
+    imgUrl: chessScene,
+    title: "Chess Scene",
+    technologyMain: "C++ / QT / OpenGL",
+    description: `Created a chess scene with QT and OpenGL during the computer graphics 1 course at the university Hochschule Hannover. 
+    Focusing on the computer graphics pipeline and rendering a scene with geometric objects.
+
+    Runs on Ubuntu 20.04. The GPU has to support OpenGL 3.3.`,
+    codeUrl: "https://github.com/schehat/chess_scene",
+    demoUrl: "",
+    technologyAll: ["C++", "QT", "OpenGL"]
+}
+
