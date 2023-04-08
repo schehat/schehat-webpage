@@ -1,7 +1,8 @@
+import { EducationProps } from "@/src/model/props/EducationProps";
 import Image from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
-export const EducationCard = ({ education }: any) => {
+export const EducationCard = ({ education }: EducationProps) => {
   return (
     <VerticalTimelineElement
       contentStyle={{

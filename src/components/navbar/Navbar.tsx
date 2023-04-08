@@ -1,10 +1,11 @@
+import MobileNavbar from "@/src/components/navbar/MobileNavbar";
+import NavbarItems from "@/src/components/navbar/NavbarItems";
+import { imagesCommon } from "@/src/constant/Images";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { imagesCommon } from "../../constant/Images";
-import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -62,34 +63,7 @@ const Navbar = () => {
           />
         </Link>
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#home" scroll={false}>
-                Home
-              </Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              {/* scroll={false} is for smooth scrolling no hard jump*/}
-              <Link href="/#about" scroll={false}>
-                About
-              </Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#skills" scroll={false}>
-                Skills
-              </Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#projects" scroll={false}>
-                Projects
-              </Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#contact" scroll={false}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <NavbarItems linkColor={linkColor} />
           {/* Hamburger Icon */}
           <div
             style={{ color: `${linkColor}` }}
@@ -103,7 +77,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {/* Overlay */}
-      <MobileNavbar nav={nav} handleNav={handleNav} setNav={setNav} />
+      <MobileNavbar nav={nav} setNav={setNav} handleNav={handleNav} />
     </div>
   );
 };

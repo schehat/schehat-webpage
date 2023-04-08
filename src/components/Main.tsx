@@ -1,10 +1,10 @@
+import { links } from "@/src/constant/Links";
+import SectionWrapper from "@/src/hoc/SectionWrapper";
+import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { links } from "../constant/Links";
-import SectionWrapper from "../hoc/SectionWrapper";
-import { textVariant } from "../utils/motion";
 
 const Main = () => {
   return (
@@ -34,7 +34,7 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link href="/#contact">
+            <Link href="/#contact" scroll={false}>
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>

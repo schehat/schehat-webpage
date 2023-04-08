@@ -1,6 +1,6 @@
 import ContactImg from "@/src/assets/contact.jpg";
+import SocialButtons from "@/src/components/SocialButtons";
 import Image from "next/image";
-import SocialButtons from "../SocialButtons";
 
 const Connect = () => {
   return (

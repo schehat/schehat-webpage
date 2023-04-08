@@ -1,8 +1,8 @@
-import { ProjectsCard } from "@/src/model/ProjectsCard";
+import { ProjectsCardProps } from "@/src/model/props/ProjectsCardProps";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectsCard = ({ title, img, tech, projectUrl }: ProjectsCard) => {
+const ProjectsCard = ({ title, img, tech, projectUrl }: ProjectsCardProps) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[color:var(--text-mainGreen)] to-[color:var(--text-secondGreen)]">
       <Image

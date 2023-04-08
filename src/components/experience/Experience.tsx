@@ -1,14 +1,14 @@
 import { ExperienceCard } from "@/src/components/experience/ExperienceCard";
 import { experiences } from "@/src/constant/Experience";
+import SectionWrapper from "@/src/hoc/SectionWrapper";
+import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import SectionWrapper from "../../hoc/SectionWrapper";
-import { textVariant } from "../../utils/motion";
 
 const Experience = () => {
   return (
-    <>
+    <div id="experience">
       <motion.div variants={textVariant(0)}>
         <p className="text-center uppercase text-xl tracking-widest text-[color:var(--text-mainGreen)]">
           What I have done
@@ -26,7 +26,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

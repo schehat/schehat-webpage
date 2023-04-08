@@ -1,10 +1,12 @@
+import SocialButtons from "@/src/components/SocialButtons";
+import MobileNavbarItems from "@/src/components/navbar//MobileNavbarItems";
 import { imagesCommon } from "@/src/constant/Images";
+import { MobileNavbarProps } from "@/src/model/props/MobileNavbarProps";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
-import SocialButtons from "../SocialButtons";
 
-const MobileNavbar = ({ nav, handleNav, setNav }: any) => {
+const MobileNavbar = ({ nav, handleNav, setNav }: MobileNavbarProps) => {
   return (
     <div
       className={
@@ -35,33 +37,7 @@ const MobileNavbar = ({ nav, handleNav, setNav }: any) => {
           </div>
         </div>
         <div className="py-4 flex flex-col">
-          <ul className="uppercase">
-            <Link href="/#home" scroll={false}>
-              <li onClick={() => setNav(false)} className="py-4 text-sm">
-                Home
-              </li>
-            </Link>
-            <Link href="/#about" scroll={false}>
-              <li onClick={() => setNav(false)} className="py-4 text-sm">
-                About
-              </li>
-            </Link>
-            <Link href="/#skills" scroll={false}>
-              <li onClick={() => setNav(false)} className="py-4 text-sm">
-                Skills
-              </li>
-            </Link>
-            <Link href="/#projects" scroll={false}>
-              <li onClick={() => setNav(false)} className="py-4 text-sm">
-                Projects
-              </li>
-            </Link>
-            <li onClick={() => setNav(false)} className="py-4 text-sm">
-              <Link href="/#contact" scroll={false}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <MobileNavbarItems setNav={setNav} />
           <div className="pt-40">
             <p className="uppercase tracking-widest text-[color:var(--text-mainGreen)]">
               Let&apos;s Connect

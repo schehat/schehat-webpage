@@ -1,9 +1,5 @@
 import { RiRadioButtonFill } from "react-icons/ri";
 
-type Props = {
-  technologies: string[];
-};
-
 const Technologies = ({ technologies }: { technologies: string[] }) => {
   return (
     <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">

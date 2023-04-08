@@ -1,7 +1,11 @@
-import { ProjectHeader } from "@/src/model/ProjectHeader";
+import { ProjectHeaderProps } from "@/src/model/props/ProjectHeaderProps";
 import Image from "next/image";
 
-const ProjectHeader = ({ imgUrl, title, technologyMain }: ProjectHeader) => {
+const ProjectHeader = ({
+  imgUrl,
+  title,
+  technologyMain,
+}: ProjectHeaderProps) => {
   return (
     <div className="w-screen h-[20vh] relative">
       <div className="absolute top-0 left-0 w-full h-[20vh] bg-black/70 z-10" />

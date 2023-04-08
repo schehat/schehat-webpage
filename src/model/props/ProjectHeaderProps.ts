@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
-export type ProjectHeader = {
+export interface ProjectHeaderProps {
   imgUrl: StaticImageData;
   title: string;
   technologyMain: string;
-};
+}

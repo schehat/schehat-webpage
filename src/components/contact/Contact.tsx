@@ -1,9 +1,9 @@
+import ScrollToHome from "@/src/components/ScrollToHome";
 import Connect from "@/src/components/contact/Connect";
+import ContactForm from "@/src/components/contact/ContactForm";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
-import ScrollToHome from "../ScrollToHome";
-import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (

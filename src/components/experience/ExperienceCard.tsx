@@ -1,7 +1,8 @@
+import { ExperienceProps } from "@/src/model/props/ExperienceProps";
 import Image from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
-export const ExperienceCard = ({ experience }: any) => {
+export const ExperienceCard = ({ experience }: ExperienceProps) => {
   return (
     <VerticalTimelineElement
       contentStyle={{

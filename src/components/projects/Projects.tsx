@@ -1,6 +1,10 @@
 import ProjectsCard from "@/src/components/projects/ProjectsCard";
-import { imagesProjects } from "@/src/constant/Images";
-import { ChessScene } from "@/src/constant/Projects";
+import {
+  ChessScene,
+  ImageManipulation,
+  SearchAlgorithmAStar,
+  SudokuWithSolver,
+} from "@/src/constant/Projects";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
@@ -16,28 +20,28 @@ const Projects = () => {
           <h2 className="py-4">What I&apos;ve Built</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectsCard
-              title="Property Finder"
-              img={imagesProjects.property}
-              projectUrl="/projects/property"
-              tech="React JS"
-            ></ProjectsCard>
-            <ProjectsCard
               title={ChessScene.title}
               img={ChessScene.imgUrl}
               projectUrl="/projects/chess_scene"
               tech={ChessScene.technologyMain}
             />
             <ProjectsCard
-              title="Netflix App"
-              img={imagesProjects.netflix}
-              projectUrl="/netflix"
-              tech="React JS"
+              title={ImageManipulation.title}
+              img={ImageManipulation.imgUrl}
+              projectUrl="/projects/image_manipulation"
+              tech={ImageManipulation.technologyMain}
             />
             <ProjectsCard
-              title="Twitch UI"
-              img={imagesProjects.twitch}
-              projectUrl="/twitch"
-              tech="Next JS"
+              title={SudokuWithSolver.title}
+              img={SudokuWithSolver.imgUrl}
+              projectUrl="/projects/sudoku_with_solver"
+              tech={SudokuWithSolver.technologyMain}
+            />
+            <ProjectsCard
+              title={SearchAlgorithmAStar.title}
+              img={SearchAlgorithmAStar.imgUrl}
+              projectUrl="/projects/search_algorithm_a_star"
+              tech={SearchAlgorithmAStar.technologyMain}
             />
           </div>
         </motion.div>

@@ -1,14 +1,14 @@
+import { EducationCard } from "@/src/components/education/EducationCard";
 import { education } from "@/src/constant/Education";
+import SectionWrapper from "@/src/hoc/SectionWrapper";
+import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import SectionWrapper from "../../hoc/SectionWrapper";
-import { textVariant } from "../../utils/motion";
-import { EducationCard } from "./EducationCard";
 
 const Education = () => {
   return (
-    <>
+    <div id="education">
       <motion.div variants={textVariant(0)}>
         <p className="text-center uppercase text-xl tracking-widest text-[color:var(--text-mainGreen)]">
           What I have studied
@@ -23,7 +23,7 @@ const Education = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 
