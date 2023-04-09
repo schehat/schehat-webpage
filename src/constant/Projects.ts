@@ -1,5 +1,5 @@
 import basic_image_classification from "@/src/assets/projects/basic_image_classification.png";
-import chessScene from "@/src/assets/projects/chess-scene.png";
+import chess_scene from "@/src/assets/projects/chess_scene.png";
 import flappy_bird from "@/src/assets/projects/flappy_bird.png";
 import image_manipulation from "@/src/assets/projects/image_manipulation.png";
 import movie_database from "@/src/assets/projects/movie_database.png";
@@ -11,7 +11,7 @@ import { Project } from "@/src/model/Project";
 
 
 export const ChessScene : Project =  {
-    imgUrl: chessScene,
+    imgUrl: chess_scene,
     title: "Chess Scene",
     technologyMain: "C++ / QT / OpenGL",
     description: `Created a chess scene with QT and OpenGL during the computer graphics course. 

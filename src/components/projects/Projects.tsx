@@ -26,49 +26,49 @@ const Projects = () => {
             <ProjectsCard
               title={ChessScene.title}
               img={ChessScene.imgUrl}
-              projectUrl="/projects/chess_scene"
+              projectUrl="/projects/chess-scene"
               tech={ChessScene.technologyMain}
             />
             <ProjectsCard
               title={ImageManipulation.title}
               img={ImageManipulation.imgUrl}
-              projectUrl="/projects/image_manipulation"
+              projectUrl="/projects/image-manipulation"
               tech={ImageManipulation.technologyMain}
             />
             <ProjectsCard
               title={SudokuWithSolver.title}
               img={SudokuWithSolver.imgUrl}
-              projectUrl="/projects/sudoku_with_solver"
+              projectUrl="/projects/sudoku-with-solver"
               tech={SudokuWithSolver.technologyMain}
             />
             <ProjectsCard
               title={SearchAlgorithmAStar.title}
               img={SearchAlgorithmAStar.imgUrl}
-              projectUrl="/projects/search_algorithm_a_star"
+              projectUrl="/projects/search-algorithm-a-star"
               tech={SearchAlgorithmAStar.technologyMain}
             />
             <ProjectsCard
               title={MovieDatabase.title}
               img={MovieDatabase.imgUrl}
-              projectUrl="/projects/movie_database"
+              projectUrl="/projects/movie-database"
               tech={MovieDatabase.technologyMain}
             />
             <ProjectsCard
               title={TheWorldHardestGame.title}
               img={TheWorldHardestGame.imgUrl}
-              projectUrl="/projects/the_world_hardest_game"
+              projectUrl="/projects/the-world-hardest-game"
               tech={TheWorldHardestGame.technologyMain}
             />
             <ProjectsCard
               title={FlappyBird.title}
               img={FlappyBird.imgUrl}
-              projectUrl="/projects/flappy_bird"
+              projectUrl="/projects/flappy-bird"
               tech={FlappyBird.technologyMain}
             />
             <ProjectsCard
               title={BasicImageClassification.title}
               img={BasicImageClassification.imgUrl}
-              projectUrl="/projects/basic_image_classification"
+              projectUrl="/projects/basic-image-classification"
               tech={BasicImageClassification.technologyMain}
             />
           </div>
