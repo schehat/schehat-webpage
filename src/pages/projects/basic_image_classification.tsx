@@ -2,31 +2,33 @@ import CodeButton from "@/src/components/projects/project/CodeButton";
 import ProjectDescription from "@/src/components/projects/project/ProjectDescription";
 import ProjectHeader from "@/src/components/projects/project/ProjectHeader";
 import TechnologyBar from "@/src/components/projects/project/TechnologyBar";
-import { SearchAlgorithmAStar } from "@/src/constant/Projects";
+import { BasicImageClassification } from "@/src/constant/Projects";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowCircleLeft } from "react-icons/fa";
 
-const search_algorithm_a_start = () => {
+const basic_image_classification = () => {
   return (
     <div className="w-full">
       <ProjectHeader
-        imgUrl={SearchAlgorithmAStar.imgUrl}
-        title={SearchAlgorithmAStar.title}
-        technologyMain={SearchAlgorithmAStar.technologyMain}
+        imgUrl={BasicImageClassification.imgUrl}
+        title={BasicImageClassification.title}
+        technologyMain={BasicImageClassification.technologyMain}
       />
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <ProjectDescription description={SearchAlgorithmAStar.description} />
+          <ProjectDescription
+            description={BasicImageClassification.description}
+          />
           <Link
-            href={SearchAlgorithmAStar.codeUrl}
+            href={BasicImageClassification.codeUrl}
             target="_blank"
             rel="noreferrer"
           >
             <CodeButton />
           </Link>
         </div>
-        <TechnologyBar technologies={SearchAlgorithmAStar.technologyAll} />
+        <TechnologyBar technologies={BasicImageClassification.technologyAll} />
         <Link href="/#projects">
           <FaArrowCircleLeft className="scale-[2]" />
         </Link>
@@ -34,7 +36,7 @@ const search_algorithm_a_start = () => {
       <div className="flex justify-center items-center">
         <Image
           className="rounded-xl object-contain h-[500px]"
-          src={SearchAlgorithmAStar.imgUrl}
+          src={BasicImageClassification.imgUrl}
           alt="/"
         />
       </div>
@@ -42,4 +44,4 @@ const search_algorithm_a_start = () => {
   );
 };
 
-export default search_algorithm_a_start;
+export default basic_image_classification;

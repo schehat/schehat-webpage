@@ -1,9 +1,13 @@
 import ProjectsCard from "@/src/components/projects/ProjectsCard";
 import {
+  BasicImageClassification,
   ChessScene,
+  FlappyBird,
   ImageManipulation,
+  MovieDatabase,
   SearchAlgorithmAStar,
   SudokuWithSolver,
+  TheWorldHardestGame,
 } from "@/src/constant/Projects";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
@@ -42,6 +46,30 @@ const Projects = () => {
               img={SearchAlgorithmAStar.imgUrl}
               projectUrl="/projects/search_algorithm_a_star"
               tech={SearchAlgorithmAStar.technologyMain}
+            />
+            <ProjectsCard
+              title={MovieDatabase.title}
+              img={MovieDatabase.imgUrl}
+              projectUrl="/projects/movie_database"
+              tech={MovieDatabase.technologyMain}
+            />
+            <ProjectsCard
+              title={TheWorldHardestGame.title}
+              img={TheWorldHardestGame.imgUrl}
+              projectUrl="/projects/the_world_hardest_game"
+              tech={TheWorldHardestGame.technologyMain}
+            />
+            <ProjectsCard
+              title={FlappyBird.title}
+              img={FlappyBird.imgUrl}
+              projectUrl="/projects/flappy_bird"
+              tech={FlappyBird.technologyMain}
+            />
+            <ProjectsCard
+              title={BasicImageClassification.title}
+              img={BasicImageClassification.imgUrl}
+              projectUrl="/projects/basic_image_classification"
+              tech={BasicImageClassification.technologyMain}
             />
           </div>
         </motion.div>

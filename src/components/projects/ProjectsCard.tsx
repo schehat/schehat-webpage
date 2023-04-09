@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const ProjectsCard = ({ title, img, tech, projectUrl }: ProjectsCardProps) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[color:var(--text-mainGreen)] to-[color:var(--text-secondGreen)]">
+    <div className="relative flex items-center justify-center shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[color:var(--text-mainGreen)] to-[color:var(--text-secondGreen)]">
       <Image
-        className="rounded-xl group-hover:opacity-10 h-96 object-fit"
+        className="rounded-xl group-hover:opacity-10 h-80 object-fill"
         src={img}
         alt="/"
       />

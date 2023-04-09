@@ -33,7 +33,7 @@ const image_manipulation = () => {
       </div>
       <div className="flex justify-center items-center">
         <Image
-          className="rounded-xl max-w-4xl"
+          className="rounded-xl object-contain h-[500px]"
           src={ImageManipulation.imgUrl}
           alt="/"
         />

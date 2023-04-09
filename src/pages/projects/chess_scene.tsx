@@ -29,7 +29,7 @@ const chess_scene = () => {
       </div>
       <div className="flex justify-center items-center">
         <Image
-          className="rounded-xl max-w-4xl"
+          className="rounded-xl object-contain h-[500px]"
           src={ChessScene.imgUrl}
           alt="/"
         />

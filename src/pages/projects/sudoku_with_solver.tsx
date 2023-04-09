@@ -33,7 +33,7 @@ const sudoku_with_solver = () => {
       </div>
       <div className="flex justify-center items-center">
         <Image
-          className="rounded-xl max-w-4xl"
+          className="rounded-xl object-contain h-[500px]"
           src={SudokuWithSolver.imgUrl}
           alt="/"
         />
