@@ -2,7 +2,6 @@ import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
 import SocialButtons from "./SocialButtons";
-import ThemeButton from "./navbar/ThemeButton";
 
 const Main = () => {
   return (
@@ -22,7 +21,6 @@ const Main = () => {
             bring ideas to reality
           </p>
           <SocialButtons />
-          <ThemeButton />
         </motion.div>
       </div>
     </div>

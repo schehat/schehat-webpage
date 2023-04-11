@@ -1,7 +1,7 @@
+import express from "@/src/assets/skills/backend/express.png";
 import hibernate from "@/src/assets/skills/backend/hibernate.png";
 import jdbc from "@/src/assets/skills/backend/jdbc.png";
 import nestjs from "@/src/assets/skills/backend/nestjs.png";
-import nodejs from "@/src/assets/skills/backend/nodejs.png";
 import matplotlib from "@/src/assets/skills/data-science/matplotlib.png";
 import numpy from "@/src/assets/skills/data-science/numpy.png";
 import pandas from "@/src/assets/skills/data-science/pandas.png";
@@ -46,45 +46,13 @@ export const skills = {
         title: "SQL",
         image: sql
     },
-    git: {
-        title: "Git",
-        image: git
-    },
-    linux: {
-        title: "Linux",
-        image: linux
-    },
-    mysql: {
-        title: "MySQL",
-        image: mysql
-    },
-    mongodb: {
-        title: "MongoDB",
-        image: mongodb
-    },
-    react: {
-        title: "React",
-        image: react
-    },
-    nextjs: {
-        title: "NextJS",
-        image: nextjs
-    },
-    tailwind: {
-        title: "Tailwind",
-        image: tailwind
-    },
-    firebase: {
-        title: "Firebase",
-        image: firebase
-    },
     nestjs: {
         title: "NestJS",
         image: nestjs
     },
-    nodejs: {
-        title: "NodeJS",
-        image: nodejs
+    express: {
+        title: "Express",
+        image: express
     },
     jdbc: {
         title: "JDBC",
@@ -110,4 +78,36 @@ export const skills = {
         title: "scikit-learn",
         image: scikitLearn
     },
+    react: {
+        title: "React",
+        image: react
+    },
+    nextjs: {
+        title: "NextJS",
+        image: nextjs
+    },
+    tailwind: {
+        title: "Tailwind",
+        image: tailwind
+    },
+    firebase: {
+        title: "Firebase",
+        image: firebase
+    },
+    git: {
+        title: "Git",
+        image: git
+    },
+    linux: {
+        title: "Linux",
+        image: linux
+    },
+    mysql: {
+        title: "MySQL",
+        image: mysql
+    },
+    mongodb: {
+        title: "MongoDB",
+        image: mongodb
+    }
 }

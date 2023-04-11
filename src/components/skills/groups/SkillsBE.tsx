@@ -12,9 +12,9 @@ const SkillsBE = () => {
           title={skills.nestjs.title}
         />
         <SkillsCard
-          src={skills.nodejs.image}
+          src={skills.express.image}
           alt="/"
-          title={skills.nodejs.title}
+          title={skills.express.title}
         />
         <SkillsCard src={skills.jdbc.image} alt="/" title={skills.jdbc.title} />
         <SkillsCard
