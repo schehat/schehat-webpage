@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+    <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 dark:shadow-none border rounded-xl lg:p-4">
       <div className="p-4">
         <form
           action="https://getform.io/f/5b88577b-d186-4816-b943-94ec0d3c0a2e"
@@ -49,7 +49,7 @@ const ContactForm = () => {
               name="message"
             ></textarea>
           </div>
-          <button className="w-full p-4 text-gray-100 mt-4">
+          <button className="w-full p-4 text-gray-100 mt-4 dark:shadow-none">
             Send Message
           </button>
         </form>

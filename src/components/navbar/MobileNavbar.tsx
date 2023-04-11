@@ -39,7 +39,7 @@ const MobileNavbar = ({ nav, handleNav, setNav }: MobileNavbarProps) => {
         <div className="py-4 flex flex-col">
           <MobileNavbarItems setNav={setNav} />
           <div className="pt-40">
-            <p className="uppercase tracking-widest text-[color:var(--text-mainGreen)]">
+            <p className="uppercase tracking-widest text-mainGreen  dark:text-mainGreen">
               Let&apos;s Connect
             </p>
             <SocialButtons />

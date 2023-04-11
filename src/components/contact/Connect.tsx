@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Connect = () => {
   return (
-    <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+    <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 dark:shadow-none border rounded-xl p-4">
       <div className="lg:p-4 h-full">
         <div>
           <Image

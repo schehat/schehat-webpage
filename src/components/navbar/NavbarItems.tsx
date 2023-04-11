@@ -1,5 +1,6 @@
 import { NavbarItemsProps } from "@/src/model/props/NavbarItemsProps";
 import Link from "next/link";
+import ThemeButton from "./ThemeButton";
 
 const NavbarItems = ({ linkColor }: NavbarItemsProps) => {
   return (
@@ -42,6 +43,9 @@ const NavbarItems = ({ linkColor }: NavbarItemsProps) => {
           <Link href="/#contact" scroll={false}>
             Contact
           </Link>
+        </li>
+        <li className="ml-10 text-sm uppercase hover:border-b">
+          <ThemeButton />
         </li>
       </ul>
     </div>

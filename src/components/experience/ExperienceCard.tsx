@@ -1,13 +1,17 @@
 import { ExperienceProps } from "@/src/model/props/ExperienceProps";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 export const ExperienceCard = ({ experience }: ExperienceProps) => {
+  const { theme } = useTheme();
+  const color = theme === "dark" ? "#fff" : "#000";
+
   return (
     <VerticalTimelineElement
       contentStyle={{
         background: "#1d1836",
-        color: "#000",
+        color,
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}

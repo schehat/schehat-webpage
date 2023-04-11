@@ -14,7 +14,7 @@ const About = () => {
       <motion.div variants={textVariant(0)}>
         <div className="max-w-[1240px] m-auto">
           <div className="text-center">
-            <p className="uppercase text-xl tracking-widest text-[color:var(--text-mainGreen)]">
+            <p className="uppercase text-xl tracking-widest text-mainGreen  dark:text-mainGreen">
               About
             </p>
             <h2 className="py-4">Who I Am</h2>

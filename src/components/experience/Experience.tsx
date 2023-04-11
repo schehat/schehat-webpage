@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <div id="experience">
       <motion.div variants={textVariant(0)}>
-        <p className="text-center uppercase text-xl tracking-widest text-[color:var(--text-mainGreen)]">
+        <p className="text-center uppercase text-xl tracking-widest text-mainGreen  dark:text-mainGreen">
           What I have done
         </p>
         <h2 className="py-4 text-center">Work Experience</h2>

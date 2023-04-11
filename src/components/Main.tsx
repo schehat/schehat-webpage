@@ -1,10 +1,8 @@
-import { links } from "@/src/constant/Links";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import SocialButtons from "./SocialButtons";
+import ThemeButton from "./navbar/ThemeButton";
 
 const Main = () => {
   return (
@@ -16,30 +14,15 @@ const Main = () => {
           </p>
           <h1 className="py-4 text-gray-700">
             Hi, I am{" "}
-            <span className="text-[color:var(--text-mainGreen)]">Schehat</span>
+            <span className="text-mainGreen  dark:text-mainGreen">Schehat</span>
           </h1>
           <h1 className="py-2 text-gray-700">A Computer Science Student</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I am passionate about learning and technologies that allow me to
             bring ideas to reality
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <a href={links.linkedin} target="_blank" rel="noreferrer">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedinIn />
-              </div>
-            </a>
-            <a href={links.github} target="_blank" rel="noreferrer">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub />
-              </div>
-            </a>
-            <Link href="/#contact" scroll={false}>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail />
-              </div>
-            </Link>
-          </div>
+          <SocialButtons />
+          <ThemeButton />
         </motion.div>
       </div>
     </div>
