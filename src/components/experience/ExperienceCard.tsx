@@ -5,7 +5,7 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 export const ExperienceCard = ({ experience }: ExperienceProps) => {
   const { theme } = useTheme();
-  const color = theme === "dark" ? "#fff" : "#000";
+  const color = theme === "dark" ? "#fff" : "#888";
 
   return (
     <VerticalTimelineElement
