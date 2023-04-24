@@ -10,12 +10,12 @@ export const education : Education[]= [
     iconBg: "#FFFFFF",
     date: "September 2020 - Present",
     points: [
-      "Current GPA: 1.3",
-      "Member of the Computer Science Student Council",
+      "Current GPA: 1.4",
       "WE/Germany Scholarship",
+      "Member of the Computer Science Student Council",
       "Software development with Java (JavaFX, JDBC, Hibernate) and C/C++ (QT)",
       "Web development and REST-APIs with NextJS, Vue and Firebase",
-      "Databases development with SQL database and MongoDB"
+      "Databases development with SQL database and MongoDB",
     ]
   },
   { 

@@ -10,7 +10,9 @@ export const experiences : Experience[] = [
     iconBg: "#FFFFFF",
     date: "March 2023 - Present",
     points: [
-      "JUnit Tests",
+      "Programming in Java",
+      "Spring Batch",
+      "JUnit tests",
     ]
   },
   {

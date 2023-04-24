@@ -19,8 +19,8 @@ const Skills = () => {
           <SkillsLanguages />
           <SkillsBE />
           <SkillsDataScience />
-          <SkillsFE />
           <SkillsToolsDatabases />
+          <SkillsFE />
         </motion.div>
       </div>
     </div>

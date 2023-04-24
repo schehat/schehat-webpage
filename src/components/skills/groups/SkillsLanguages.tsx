@@ -13,16 +13,10 @@ const SkillsLanguages = () => {
           alt="/"
           title={skills.python.title}
         />
-        <SkillsCard src={skills.sql.image} alt="/" title={skills.sql.title} />
         <SkillsCard
           src={skills.javascript.image}
           alt="/"
           title={skills.javascript.title}
-        />
-        <SkillsCard
-          src={skills.typescript.image}
-          alt="/"
-          title={skills.typescript.title}
         />
       </div>
     </>

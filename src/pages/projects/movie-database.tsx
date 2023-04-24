@@ -24,7 +24,7 @@ const movie_database = () => {
         </div>
         <TechnologyBar technologies={MovieDatabase.technologyAll} />
         <Link href="/#projects">
-          <FaArrowCircleLeft className="scale-[2]" />
+          <FaArrowCircleLeft className="scale-[2] ml-2" />
         </Link>
       </div>
       <div className="flex justify-center items-center">

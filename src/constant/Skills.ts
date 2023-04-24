@@ -1,13 +1,13 @@
-import express from "@/src/assets/skills/backend/express.png";
 import hibernate from "@/src/assets/skills/backend/hibernate.png";
 import jdbc from "@/src/assets/skills/backend/jdbc.png";
 import nestjs from "@/src/assets/skills/backend/nestjs.png";
-import matplotlib from "@/src/assets/skills/data-science/matplotlib.png";
+import spring_boot from "@/src/assets/skills/backend/spring_boot.png";
 import numpy from "@/src/assets/skills/data-science/numpy.png";
 import pandas from "@/src/assets/skills/data-science/pandas.png";
 import scikitLearn from "@/src/assets/skills/data-science/scikit-learn.png";
+import tensorflow from "@/src/assets/skills/data-science/tensorflow.png";
 import mongodb from "@/src/assets/skills/database/mongodb.png";
-import mysql from "@/src/assets/skills/database/mysql.png";
+import sql from "@/src/assets/skills/database/sql.png";
 import firebase from "@/src/assets/skills/frontend/firebase.png";
 import nextjs from "@/src/assets/skills/frontend/nextjs.png";
 import react from "@/src/assets/skills/frontend/react.png";
@@ -16,8 +16,6 @@ import cpp from "@/src/assets/skills/languages/cpp.png";
 import java from "@/src/assets/skills/languages/java.png";
 import javascript from "@/src/assets/skills/languages/javascript.png";
 import python from "@/src/assets/skills/languages/python.png";
-import sql from "@/src/assets/skills/languages/sql.png";
-import typescript from "@/src/assets/skills/languages/typescript.png";
 import git from "@/src/assets/skills/tools/git.png";
 import linux from "@/src/assets/skills/tools/linux.png";
 
@@ -38,21 +36,13 @@ export const skills = {
         title: "JavaScript",
         image: javascript
     },
-    typescript: {
-        title: "TypeScript",
-        image: typescript
-    },
-    sql: {
-        title: "SQL",
-        image: sql
-    },
     nestjs: {
         title: "NestJS",
         image: nestjs
     },
-    express: {
-        title: "Express",
-        image: express
+    spring_boot: {
+        title: "Spring Boot",
+        image: spring_boot
     },
     jdbc: {
         title: "JDBC",
@@ -62,6 +52,14 @@ export const skills = {
         title: "Hibernate",
         image: hibernate
     },
+    tensorflow: {
+        title: "TensorFlow",
+        image: tensorflow
+    },
+    scikitLearn: {
+        title: "scikit-learn",
+        image: scikitLearn
+    },
     numpy: {
         title: "NumPy",
         image: numpy
@@ -70,13 +68,21 @@ export const skills = {
         title: "pandas",
         image: pandas
     },
-    matplotlib: {
-        title: "Matplotlib",
-        image: matplotlib
+    git: {
+        title: "Git",
+        image: git
     },
-    scikitLearn: {
-        title: "scikit-learn",
-        image: scikitLearn
+    linux: {
+        title: "Linux",
+        image: linux
+    },
+    sql: {
+        title: "SQL",
+        image: sql
+    },
+    mongodb: {
+        title: "MongoDB",
+        image: mongodb
     },
     react: {
         title: "React",
@@ -94,20 +100,4 @@ export const skills = {
         title: "Firebase",
         image: firebase
     },
-    git: {
-        title: "Git",
-        image: git
-    },
-    linux: {
-        title: "Linux",
-        image: linux
-    },
-    mysql: {
-        title: "MySQL",
-        image: mysql
-    },
-    mongodb: {
-        title: "MongoDB",
-        image: mongodb
-    }
 }

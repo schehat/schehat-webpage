@@ -1,12 +1,12 @@
 import ProjectsCard from "@/src/components/projects/ProjectsCard";
 import {
-  BasicImageClassification,
+  ANPR,
+  BinaryImageClassification,
   ChessScene,
+  DecisionTree,
   FlappyBird,
   ImageManipulation,
   MovieDatabase,
-  SearchAlgorithmAStar,
-  SudokuWithSolver,
   TheWorldHardestGame,
 } from "@/src/constant/Projects";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
@@ -24,10 +24,22 @@ const Projects = () => {
           <h2 className="py-4">What I&apos;ve Built</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectsCard
+              title={ANPR.title}
+              img={ANPR.imgUrl}
+              projectUrl="/projects/anpr"
+              tech={ANPR.technologyMain}
+            />
+            <ProjectsCard
               title={ChessScene.title}
               img={ChessScene.imgUrl}
               projectUrl="/projects/chess-scene"
               tech={ChessScene.technologyMain}
+            />
+            <ProjectsCard
+              title={DecisionTree.title}
+              img={DecisionTree.imgUrl}
+              projectUrl="/projects/decision-tree"
+              tech={DecisionTree.technologyMain}
             />
             <ProjectsCard
               title={ImageManipulation.title}
@@ -36,16 +48,10 @@ const Projects = () => {
               tech={ImageManipulation.technologyMain}
             />
             <ProjectsCard
-              title={SudokuWithSolver.title}
-              img={SudokuWithSolver.imgUrl}
-              projectUrl="/projects/sudoku-with-solver"
-              tech={SudokuWithSolver.technologyMain}
-            />
-            <ProjectsCard
-              title={SearchAlgorithmAStar.title}
-              img={SearchAlgorithmAStar.imgUrl}
-              projectUrl="/projects/search-algorithm-a-star"
-              tech={SearchAlgorithmAStar.technologyMain}
+              title={BinaryImageClassification.title}
+              img={BinaryImageClassification.imgUrl}
+              projectUrl="/projects/binary-image-classification"
+              tech={BinaryImageClassification.technologyMain}
             />
             <ProjectsCard
               title={MovieDatabase.title}
@@ -54,22 +60,16 @@ const Projects = () => {
               tech={MovieDatabase.technologyMain}
             />
             <ProjectsCard
-              title={TheWorldHardestGame.title}
-              img={TheWorldHardestGame.imgUrl}
-              projectUrl="/projects/the-world-hardest-game"
-              tech={TheWorldHardestGame.technologyMain}
-            />
-            <ProjectsCard
               title={FlappyBird.title}
               img={FlappyBird.imgUrl}
               projectUrl="/projects/flappy-bird"
               tech={FlappyBird.technologyMain}
             />
             <ProjectsCard
-              title={BasicImageClassification.title}
-              img={BasicImageClassification.imgUrl}
-              projectUrl="/projects/basic-image-classification"
-              tech={BasicImageClassification.technologyMain}
+              title={TheWorldHardestGame.title}
+              img={TheWorldHardestGame.imgUrl}
+              projectUrl="/projects/the-world-hardest-game"
+              tech={TheWorldHardestGame.technologyMain}
             />
           </div>
         </motion.div>

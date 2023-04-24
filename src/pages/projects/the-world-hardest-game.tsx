@@ -28,7 +28,7 @@ const the_world_hardest_game = () => {
         </div>
         <TechnologyBar technologies={TheWorldHardestGame.technologyAll} />
         <Link href="/#projects">
-          <FaArrowCircleLeft className="scale-[2]" />
+          <FaArrowCircleLeft className="scale-[2] ml-2" />
         </Link>
       </div>
       <div className="flex justify-center items-center">

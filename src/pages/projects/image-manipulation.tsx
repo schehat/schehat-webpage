@@ -28,7 +28,7 @@ const image_manipulation = () => {
         </div>
         <TechnologyBar technologies={ImageManipulation.technologyAll} />
         <Link href="/#projects">
-          <FaArrowCircleLeft className="scale-[2]" />
+          <FaArrowCircleLeft className="scale-[2] ml-2" />
         </Link>
       </div>
       <div className="flex justify-center items-center">
