@@ -36,7 +36,7 @@ export const DecisionTree : Project =  {
   title: "Binary Classification With Medical Data",
   technologyMain: "Python / scikit-learn / pandas",
   description: `With medical dataset doing binary classification with a decision tree to
-   to predict hearth diseases (HD) with scikit-learn.`,
+   to predict hearth diseases (HD) with scikit-learn and pandas.`,
   codeUrl: "https://github.com/schehat/decision_tree",
   demoUrl: "",
   technologyAll: ["scikit-learn", "pandas", "Matplotlib"]
