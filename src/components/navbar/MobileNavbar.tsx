@@ -29,14 +29,16 @@ const MobileNavbar = ({ nav, handleNav, setNav }: MobileNavbarProps) => {
               onClick={handleNav}
               className="rounded-full shadow-lg shadow-gray p-3 cursor-pointer"
             >
-              <AiOutlineClose />
+              <AiOutlineClose className="text-gray-700" />
             </div>
           </div>
-          <div className="border-b border-gray-300 my-4">
-            <p className="w-[85%] md:w-[90%] py-4">Lets build something</p>
+          <div className="border-b my-4 ">
+            <p className="w-[85%] md:w-[90%] py-4">
+              <span className="text-gray-700">Lets build something</span>
+            </p>
           </div>
         </div>
-        <div className="py-4 flex flex-col">
+        <div className="py-4 flex flex-col text-gray-700">
           <MobileNavbarItems setNav={setNav} />
           <div className="pt-40">
             <p className="uppercase tracking-widest text-mainGreen  dark:text-mainGreen">
