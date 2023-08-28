@@ -1,12 +1,11 @@
 import anpr from "@/src/assets/projects/anpr.png";
-import binary_image_classification from "@/src/assets/projects/binary_image_classification.png";
 import chess_scene from "@/src/assets/projects/chess_scene.png";
 import decision_tree from "@/src/assets/projects/decision_tree.png";
 import flappy_bird from "@/src/assets/projects/flappy_bird.png";
 import image_manipulation from "@/src/assets/projects/image_manipulation.png";
 import movie_database from "@/src/assets/projects/movie_database.png";
+import sudoku_with_solver from "@/src/assets/projects/sudoko_with_solver.png";
 import the_worlds_hardest_game from "@/src/assets/projects/the_worlds_hardest_game.png";
-
 import { Project } from "@/src/model/Project";
 
 export const ANPR : Project =  {
@@ -31,16 +30,15 @@ export const ChessScene : Project =  {
     technologyAll: ["C++", "QT", "OpenGL"]
 }
 
-export const DecisionTree : Project =  {
-  imgUrl: decision_tree,
-  title: "Binary Classification With Medical Data",
-  technologyMain: "Python / scikit-learn / pandas",
-  description: `With medical dataset doing binary classification with a decision tree to
-   to predict hearth diseases (HD) with scikit-learn and pandas.`,
-  codeUrl: "https://github.com/schehat/decision_tree",
+export const FlappyBird: Project = {
+  imgUrl: flappy_bird,
+  title: "Flappy Bird AI",
+  technologyMain: "NEAT / Python / Pygame",
+  description: `Implemented an AI to the Flappy Bird game with Python and Pygame. The AI is follows the NeuroEvolution of Augmented Topologies (NEAT) evolutionary algorithm that creates artificial neural networks. Follows the concept of survival of the fittest.`,
+  codeUrl: "https://github.com/schehat/deep_learning/tree/main/neat_algorithm/flappy_bird",
   demoUrl: "",
-  technologyAll: ["scikit-learn", "pandas", "Matplotlib"]
-}
+  technologyAll: ["NEAT", "Python", "Pygame"],
+};
 
 export const ImageManipulation : Project =  {
     imgUrl: image_manipulation,
@@ -53,15 +51,15 @@ export const ImageManipulation : Project =  {
     technologyAll: ["C++", "QT"]
 }
 
-export const BinaryImageClassification : Project =  {
-  imgUrl: binary_image_classification,
-  title: "Binary Image Classification",
-  technologyMain: "Python / TensorFlow",
-  description: `Image classifier with a convolutional neural network in TensorFlow with 
-  any dataset. In my example I trained a model with images of happy and sad people`,
-  codeUrl: "https://github.com/schehat/binary_image_classification",
+export const DecisionTree : Project =  {
+  imgUrl: decision_tree,
+  title: "Binary Classification With Medical Data",
+  technologyMain: "Python / scikit-learn / pandas",
+  description: `With medical dataset doing binary classification with a decision tree to
+   to predict hearth diseases (HD) with scikit-learn and pandas.`,
+  codeUrl: "https://github.com/schehat/decision_tree",
   demoUrl: "",
-  technologyAll: ["Python", "TensorFlow", "Matplotlib", "OpenCV"]
+  technologyAll: ["scikit-learn", "pandas", "Matplotlib"]
 }
 
 export const MovieDatabase: Project = {
@@ -74,15 +72,15 @@ export const MovieDatabase: Project = {
   technologyAll: ["Java", "Hibernate", "Jakarta", "Swing"],
 };
 
-export const FlappyBird: Project = {
-  imgUrl: flappy_bird,
-  title: "Flappy Bird AI",
-  technologyMain: "NEAT / Python / Pygame",
-  description: `Implemented an AI to the Flappy Bird game with Python and Pygame. The AI is follows the NeuroEvolution of Augmented Topologies (NEAT) evolutionary algorithm that creates artificial neural networks. Follows the concept of survival of the fittest.`,
-  codeUrl: "https://github.com/schehat/deep_learning/tree/main/neat_algorithm/flappy_bird",
+export const SudokuWithSolver : Project =  {
+  imgUrl: sudoku_with_solver,
+  title: "Sudoku With Solver",
+  technologyMain: "Python / Pygame",
+  description: `Creating a Sudoku game with Python and Pygame and using backtracking to solve it`,
+  codeUrl: "https://github.com/schehat/pygame_projects/tree/main/sudoko_with_solver",
   demoUrl: "",
-  technologyAll: ["NEAT", "Python", "Pygame"],
-};
+  technologyAll: ["Python", "Pygame"]
+}
 
 export const TheWorldHardestGame: Project = {
   imgUrl: the_worlds_hardest_game,

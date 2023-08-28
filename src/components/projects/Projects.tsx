@@ -1,13 +1,13 @@
 import ProjectsCard from "@/src/components/projects/ProjectsCard";
 import {
   ANPR,
-  BinaryImageClassification,
   ChessScene,
   DecisionTree,
   FlappyBird,
   ImageManipulation,
   MovieDatabase,
-  TheWorldHardestGame,
+  SudokuWithSolver,
+  TheWorldHardestGame
 } from "@/src/constant/Projects";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
@@ -36,10 +36,10 @@ const Projects = () => {
               tech={ChessScene.technologyMain}
             />
             <ProjectsCard
-              title={DecisionTree.title}
-              img={DecisionTree.imgUrl}
-              projectUrl="/projects/decision-tree"
-              tech={DecisionTree.technologyMain}
+              title={FlappyBird.title}
+              img={FlappyBird.imgUrl}
+              projectUrl="/projects/flappy-bird"
+              tech={FlappyBird.technologyMain}
             />
             <ProjectsCard
               title={ImageManipulation.title}
@@ -48,10 +48,10 @@ const Projects = () => {
               tech={ImageManipulation.technologyMain}
             />
             <ProjectsCard
-              title={BinaryImageClassification.title}
-              img={BinaryImageClassification.imgUrl}
-              projectUrl="/projects/binary-image-classification"
-              tech={BinaryImageClassification.technologyMain}
+              title={DecisionTree.title}
+              img={DecisionTree.imgUrl}
+              projectUrl="/projects/decision-tree"
+              tech={DecisionTree.technologyMain}
             />
             <ProjectsCard
               title={MovieDatabase.title}
@@ -60,10 +60,10 @@ const Projects = () => {
               tech={MovieDatabase.technologyMain}
             />
             <ProjectsCard
-              title={FlappyBird.title}
-              img={FlappyBird.imgUrl}
-              projectUrl="/projects/flappy-bird"
-              tech={FlappyBird.technologyMain}
+              title={SudokuWithSolver.title}
+              img={SudokuWithSolver.imgUrl}
+              projectUrl="/projects/sudoku-with-solver"
+              tech={SudokuWithSolver.technologyMain}
             />
             <ProjectsCard
               title={TheWorldHardestGame.title}

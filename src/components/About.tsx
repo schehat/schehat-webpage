@@ -32,7 +32,7 @@ const About = () => {
               </p>
               <p className="py-2 text-gray-600">
                 In my spare time, I enjoy calisthenics and staying fit, as well
-                as playing video games and watching anime. Additionally, I have
+                as playing video games or piano and watching anime. Additionally, I have
                 a keen interest in the fields of machine learning. Besides I try
                 new technologies out and widen my horizon.
               </p>
