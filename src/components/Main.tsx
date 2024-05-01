@@ -17,8 +17,7 @@ const Main = () => {
           </h1>
           <h1 className="py-2 text-gray-700">A Computer Science Student</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I am passionate about learning and technologies that allow me to
-            bring ideas to reality
+            I am passionate about technologies that allow me to bring ideas to reality
           </p>
           <SocialButtons />
         </motion.div>

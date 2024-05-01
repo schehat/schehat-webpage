@@ -21,19 +21,19 @@ const About = () => {
           <div className="md:flex md:flex-row md:items-start md:justify-between md:py-16">
             <div className="w-full md:w-1/2 px-2">
               <p className="py-2 text-gray-600">
-                I began my programming journey in 2016 learning the basics of
-                Java in my free time. Then gradually expanded my skillset by
-                learning Python and web development. In 2020 I started studying
-                Applied Computer Science at university and dived deeper into the
-                core concepts of programming and software architecture through
-                Java, C/C++, Unix and databases. This enabled me to create
-                software projects for assignments and personal projects and
-                continue to improve my skills.
+                I began my programming journey in 2016 learning the basics of Java in my free time. 
+                Then gradually expanded my skill set by learning web development and Python to 
+                experiment with AI. In 2020, I started studying for my Bachelor degree in Applied 
+                Computer Science at university and dived deeper into the core concepts of 
+                programming and software architecture through Java, C/C++, Unix and databases. 
+                This enabled me to create software projects for assignments and personal projects. 
+                At the moment I am pursuing my Master degree in Computer Science at the Leibniz 
+                University Hannover with a focus in Data Science and Machine Learning.
               </p>
               <p className="py-2 text-gray-600">
                 In my spare time, I enjoy calisthenics and staying fit, as well
-                as playing video games or piano and watching anime. Additionally, I have
-                a keen interest in the fields of machine learning. Besides I try
+                as playing video games, piano, watching anime and reading. Additionally, I have
+                a keen interest in the fields of Machine Learning. Besides I try
                 new technologies out and widen my horizon.
               </p>
             </div>

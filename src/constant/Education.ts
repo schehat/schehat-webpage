@@ -1,21 +1,31 @@
 import bbsme from "@/src/assets/education/bbsme.png";
 import hsh from "@/src/assets/education/hsh.png";
+import luh from "@/src/assets/education/luh.png";
 import { Education } from "@/src/model/Education";
 
 export const education : Education[]= [
   {
-    title: "B. Sc. Angewandte Informatik",
-    institution: "Hochschule Hannover",
+    title: "M. Sc. Computer Science",
+    institution: "Leibniz University Hannover",
+    icon: luh,
+    iconBg: "#FFFFFF",
+    date: "April 2024 - Present",
+    points: ["Focus on Data Science & Machine Learning"
+    ]
+  },
+  {
+    title: "B. Sc. Applied Computer Science",
+    institution: "Applied University Hannover",
     icon: hsh,
     iconBg: "#FFFFFF",
-    date: "September 2020 - Present",
+    date: "September 2020 - February 2024",
     points: [
-      "Current GPA: 1.4",
-      "WE/Germany Scholarship",
+      "Grade: 1.4",
+      "German Scholarship for talented students",
       "Member of the Computer Science Student Council",
-      "Software development with Java (JavaFX, JDBC, Hibernate) and C/C++ (QT)",
-      "Web development and REST-APIs with NextJS, Vue and Firebase",
-      "Databases development with SQL database and MongoDB",
+      "Full Stack development projects with Java, Spring and Hibernate",
+      "Web development with REST interface Nuxt, Vue and MongoDB",
+      "Computer graphics oriented programming with C++ and QT"
     ]
   },
   { 
@@ -25,9 +35,9 @@ export const education : Education[]= [
     iconBg: "#FFFFFF",
     date: "August 2017 - June 2020",
     points: [
-      "GPA: 1.8",
-      "Year representative",
-      "DPG A-Level Award for very good performance in physics"
+      "Grade: 1.8",
+      "Class representative",
+      "German Physical Society A Level Price"
     ]
   }
 ];

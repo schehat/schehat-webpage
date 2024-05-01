@@ -1,17 +1,32 @@
 import { Experience } from "@/src//model/Experience";
 import fi from "@/src/assets/experience/fi.png";
+import hacon from "@/src/assets/experience/hacon.png";
 import hsh from "@/src/assets/experience/hsh.png";
 
 export const experiences : Experience[] = [
   {
     title: "Software Developer",
+    companyName: "Hacon",
+    icon: hacon,
+    iconBg: "#FFFFFF",
+    date: "March 2024 - Present",
+    points: [
+      "Java",
+      "Spring",
+      "Hibernate",
+      "JUnit tests",
+    ]
+  },
+  {
+    title: "Software Developer",
     companyName: "Finanz Informatik",
     icon: fi,
     iconBg: "#FFFFFF",
-    date: "March 2023 - Present",
+    date: "March 2023 - February 2024",
     points: [
-      "Programming in Java",
-      "Spring Batch",
+      "Java",
+      "Spring",
+      "SQL",
       "JUnit tests",
     ]
   },
