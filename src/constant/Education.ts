@@ -1,6 +1,7 @@
 import bbsme from "@/src/assets/education/bbsme.png";
 import hsh from "@/src/assets/education/hsh.png";
 import luh from "@/src/assets/education/luh.png";
+import science_tokyo from "@/src/assets/education/science_tokyo.png";
 import { Education } from "@/src/model/Education";
 
 export const education : Education[]= [
@@ -10,7 +11,22 @@ export const education : Education[]= [
     icon: luh,
     iconBg: "#FFFFFF",
     date: "April 2024 - Present",
-    points: ["Focus on Data Science & Machine Learning"
+    points: [
+      	"Specialization: Data Science - ML, DL, NLP",
+	      "Current Grade: 1.0",
+	      "German Scholarship for talented students",
+	      "Supporting international students as tutor"
+    ]
+  },
+    {
+    title: "Exchange Semester",
+    institution: "Institute of Science Tokyo",
+    icon: science_tokyo,  
+    iconBg: "#FFFFFF",
+    date: "September 2025 - February 2026",
+    points: [
+      "Focus on Data Science", 
+      "Promos Scholarship for academic excellence"
     ]
   },
   {
@@ -20,12 +36,9 @@ export const education : Education[]= [
     iconBg: "#FFFFFF",
     date: "September 2020 - February 2024",
     points: [
-      "Grade: 1.4",
-      "German Scholarship for talented students",
-      "Member of the Computer Science Student Council",
-      "Full Stack development projects with Java, Spring and Hibernate",
-      "Web development with REST interface Nuxt, Vue and MongoDB",
-      "Computer graphics oriented programming with C++ and QT"
+      "Final grade: 1.4",
+      "3x German Scholarship for talented students",
+      "Member of the Computer Science Student Council"
     ]
   },
   { 

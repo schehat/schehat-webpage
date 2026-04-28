@@ -21,20 +21,32 @@ const About = () => {
           <div className="md:flex md:flex-row md:items-start md:justify-between md:py-16">
             <div className="w-full md:w-1/2 px-2">
               <p className="py-2 text-gray-600">
-                I began my programming journey in 2016 learning the basics of Java in my free time. 
-                Then gradually expanded my skill set by learning web development and Python to 
-                experiment with AI. In 2020, I started studying for my Bachelor degree in Applied 
-                Computer Science at university and dived deeper into the core concepts of 
-                programming and software architecture through Java, C/C++, Unix and databases. 
-                This enabled me to create software projects for assignments and personal projects. 
-                At the moment I am pursuing my Master degree in Computer Science at the Leibniz 
-                University Hannover with a focus in Data Science and Machine Learning.
+                Computer Science student specializing in Data Science with a 1.0
+                GPA and professional experience in software development.
+                Experienced in building data pipelines, analyzing datasets and
+                applying machine learning in Python and developing scalable
+                backend systems in Java. Interested in leveraging data,
+                automation and AI techniques to improve business processes and
+                support data-driven solutions.
               </p>
               <p className="py-2 text-gray-600">
-                In my spare time, I enjoy calisthenics and staying fit, as well
-                as playing video games, piano, watching anime and reading. Additionally, I have
-                a keen interest in the fields of Machine Learning. Besides I try
-                new technologies out and widen my horizon.
+                Outside of my studies, I am someone who is always looking to
+                grow. Whether that is physically, intellectually or through new
+                experiences. I stay active through calisthenics and cycling and
+                I have a genuine love for being out in nature. Travelling is
+                something I am passionate about too. My exchange semester at the
+                Institute of Science Tokyo was one of my most valuable
+                experiences of my life. For quieter moments, I enjoy reading
+                manga and playing video games.
+              </p>
+              <p className="py-2 text-gray-600">
+                On a personal level, I tend to be proactive and communicative. I
+                have always gravitated toward roles where I can take initiative
+                and have impact. Whether as a class representative, a student
+                council member or a tutor supporting international students. I
+                care about doing work that has real impact, which is a big part
+                of why I am drawn to data and the way it can drive meaningful
+                decisions.
               </p>
             </div>
             <div className="w-full md:w-1/2 h-[450px] flex flex-col items-center justify-center shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300">

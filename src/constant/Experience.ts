@@ -9,12 +9,11 @@ export const experiences : Experience[] = [
     companyName: "Hacon",
     icon: hacon,
     iconBg: "#FFFFFF",
-    date: "March 2024 - Present",
+    date: "March 2024 - September 2025",
     points: [
-      "Java",
-      "Spring",
-      "Hibernate",
-      "JUnit tests",
+      "Developed and maintained full-stack applications in Java and Angular supporting complex data processing workflows",
+      "Designed and maintained GitLab CI/CD pipelines for containerized (Docker) deployments",
+      "Collaborated in agile cross-functional international team, translating business requirements into reliable software solutions"
     ]
   },
   {
@@ -24,10 +23,9 @@ export const experiences : Experience[] = [
     iconBg: "#FFFFFF",
     date: "March 2023 - February 2024",
     points: [
-      "Java",
-      "Spring",
-      "SQL",
-      "JUnit tests",
+      "Built and maintained full-stack applications in Java & React for Germany's public banking IT infrastructure",
+      "Developed and optimized SQL queries for data processing and backend data workflows",
+      "Gained practical experience with large-scale data management and backend data flows"
     ]
   },
   {
@@ -37,9 +35,7 @@ export const experiences : Experience[] = [
     iconBg: "#FFFFFF",
     date: "October 2022 - February 2023",
     points: [
-      "Supervising assignments",
-      "Teaching programming concepts",
-      "Correcting exams"
+      "Tutor in C/C++ programming, supervised lab sessions and graded examinations"
     ]
   }
 ];
