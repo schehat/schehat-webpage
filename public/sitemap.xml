@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://schehat-webpage.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://schehat-webpage.vercel.app/projects/anpr</loc>
+  </url>
+  <url>
+    <loc>https://schehat-webpage.vercel.app/projects/chess-scene</loc>
+  </url>
+  <url>
+    <loc>https://schehat-webpage.vercel.app/projects/decision-tree</loc>
+  </url>
+  <url>
+    <loc>https://schehat-webpage.vercel.app/projects/flappy-bird</loc>
+  </url>
+  <url>
+    <loc>https://schehat-webpage.vercel.app/projects/image-manipulation</loc>
+  </url>
+  <url>
+    <loc>https://schehat-webpage.vercel.app/projects/movie-database</loc>
+  </url>
+  <url>
+    <loc>https://schehat-webpage.vercel.app/projects/sudoku-with-solver</loc>
+  </url>
+  <url>
+    <loc>https://schehat-webpage.vercel.app/projects/the-world-hardest-game</loc>
+  </url>
+</urlset>
