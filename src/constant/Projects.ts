@@ -1,33 +1,88 @@
+import ai_in_education from "@/src/assets/projects/ai_in_education.png";
 import anpr from "@/src/assets/projects/anpr.png";
 import chess_scene from "@/src/assets/projects/chess_scene.png";
-import decision_tree from "@/src/assets/projects/decision_tree.png";
+import cnn_image_segmentation from "@/src/assets/projects/cnn_image_segmentation.png";
+import emotion_classification_bert from "@/src/assets/projects/emotion_classification_bert.png";
 import flappy_bird from "@/src/assets/projects/flappy_bird.png";
-import image_manipulation from "@/src/assets/projects/image_manipulation.png";
-import movie_database from "@/src/assets/projects/movie_database.png";
-import sudoku_with_solver from "@/src/assets/projects/sudoko_with_solver.png";
+import genetic_algorithm_AFVRP from "@/src/assets/projects/genetic_algorithm_AFVRP.png";
+import seq_to_seq_model from "@/src/assets/projects/seq_to_seq_model.png";
+import single_cell_EDA from "@/src/assets/projects/single_cell_EDA.png";
 import the_worlds_hardest_game from "@/src/assets/projects/the_worlds_hardest_game.png";
 import { Project } from "@/src/model/Project";
+
+export const EmotionClassificationBERT: Project = {
+  imgUrl: emotion_classification_bert,
+  title: "Emotion Classification with BERT",
+  technologyMain: "Python / Transformers",
+  description: `Fine-tuned a pre-trained BERT model for multi-class emotion classification on the dair-ai/emotion dataset from Hugging Face.`,
+  codeUrl: "https://github.com/schehat/",
+  demoUrl: "",
+  technologyAll: ["Python", "PyTorch", "Transformers", "Hugging Face", "pandas", "Matplotlib"]
+}
+
+export const SeqToSeqModel: Project = {
+  imgUrl: seq_to_seq_model,
+  title: "Language Model for Machine Translation",
+  technologyMain: "Python / Seq2Seq",
+  description: `Developed a sequence-to-sequence model in PyTorch for English-to-German translation with Hugging Face.
+  Built data preprocessing pipelines and evaluated model performance`,
+  codeUrl: "https://github.com/schehat/",
+  demoUrl: "",
+  technologyAll: ["Python", "Seq2Seq", "Hugging Face"]
+}
+
+export const CNNImageSegmentation : Project =  {
+  imgUrl: cnn_image_segmentation,
+  title: "Image Segmentation with Mask R-CNN",
+  technologyMain: "Python / PyTorch",
+  description: `Fine-tuned a pre-trained Mask R-CNN model for pixel-wise pet image segmentation and implemented custom data augmentation pipelines and collate functions.`,
+  codeUrl: "https://github.com/schehat/",
+  demoUrl: "",
+  technologyAll: ["Python", "PyTorch", "torchvision", "NumPy", "Matplotlib"]
+}
+
+export const AIInEducation : Project =  {
+  imgUrl: ai_in_education,
+  title: "AI in Education: Predicting student dropout and academic success",
+  technologyMain: "Python / scikit-learn / pandas",
+  description: `Performed end-to-end data analysis on structured datasets using Python and scikit-learn.
+   Applied feature engineering, model selection and cross-validation to identify key risk factors and support data-driven decision making.`,
+  codeUrl: "https://github.com/schehat/AI-in-Education",
+  demoUrl: "",
+  technologyAll: ["Python", "scikit-learn", "pandas", "Matplotlib"]
+}
+
+export const SingleCellEDA : Project =  {
+  imgUrl: single_cell_EDA,
+  title: "Single-Cell RNA-Seq Analysis - Genomic Data Science (EDA)",
+  technologyMain: "Python / scikit-learn",
+  description: `Conducted exploratory data analysis on a large-scale scRNA-seq dataset using Python and Jupyter Notebook.
+  Identified cell populations, analyzed per-cluster gene expression patterns, and evaluated perturbation effects`,
+  codeUrl: "https://github.com/schehat/ml_in_genomic_data_science",
+  demoUrl: "",
+  technologyAll: ["Python", "scikit-learn", "pandas", "Matplotlib"]
+}
+
+export const GeneticAlgorithmAFVRP : Project =  {
+  imgUrl: genetic_algorithm_AFVRP,
+  title: "Genetic Algorithm for the Agricultural Fleet Vehicle Routing Problem",
+  technologyMain: "Python",
+  description: `Designed a hybrid optimization algorithm in Python to solve a real-world logistics and scheduling problem.
+  Evaluated performance improvements and compared alternative routing strategies.`,
+  codeUrl: "https://github.com/schehat/genetic_algorithm_for_vehicle_routing_problem",
+  demoUrl: "",
+  technologyAll: ["Python", "NumPy", "Matplotlib"]
+}
 
 export const ANPR : Project =  {
   imgUrl: anpr,
   title: "Automatic Number-Plate Recognition",
-  technologyMain: "Python / TensorFlow / PyTorch",
+  technologyMain: "Python / TensorFlow / OpenCV",
   description: `Perform Number Plate Recognition with the TensorFlow Object Detection API 
   and a PyTorch OCR model for detecting the text in the plate. With real time through the webcam.`,
   codeUrl: "https://github.com/schehat/automatic_number_plate_recognition",
   demoUrl: "",
-  technologyAll: ["Python", "TensorFlow", "PyTorch", "OpenCV", "NumPy", "Matplotlib"]
-}
-
-export const ChessScene : Project =  {
-    imgUrl: chess_scene,
-    title: "Chess Scene",
-    technologyMain: "C++ / QT / OpenGL",
-    description: `Created a chess scene with QT and OpenGL during the computer graphics course. 
-    Focusing on the computer graphics pipeline and rendering a scene with geometric objects - polygons.`,
-    codeUrl: "https://github.com/schehat/chess_scene",
-    demoUrl: "",
-    technologyAll: ["C++", "QT", "OpenGL"]
+  technologyAll: ["Python", "TensorFlow", "OpenCV", "NumPy", "Matplotlib"]
 }
 
 export const FlappyBird: Project = {
@@ -40,46 +95,15 @@ export const FlappyBird: Project = {
   technologyAll: ["NEAT", "Python", "Pygame"],
 };
 
-export const ImageManipulation : Project =  {
-    imgUrl: image_manipulation,
-    title: "Image Manipulation",
-    technologyMain: "C++ / QT",
-    description: `Assignments during the computer graphics course to implement preprocessing algorithms
-     of image manipulation to detect objects in images used by libraries such as OpenCV, e.g. the Canny algorithm.`,
-    codeUrl: "https://github.com/schehat/image_manipulation",
+export const ChessScene : Project =  {
+    imgUrl: chess_scene,
+    title: "Chess Scene",
+    technologyMain: "C++ / QT / OpenGL",
+    description: `Created a chess scene with QT and OpenGL during the computer graphics course. 
+    Focusing on the computer graphics pipeline and rendering a scene with geometric objects - polygons.`,
+    codeUrl: "https://github.com/schehat/chess_scene",
     demoUrl: "",
-    technologyAll: ["C++", "QT"]
-}
-
-export const DecisionTree : Project =  {
-  imgUrl: decision_tree,
-  title: "Binary Classification With Medical Data",
-  technologyMain: "Python / scikit-learn / pandas",
-  description: `With medical dataset doing binary classification with a decision tree to
-   to predict hearth diseases (HD) with scikit-learn and pandas.`,
-  codeUrl: "https://github.com/schehat/decision_tree",
-  demoUrl: "",
-  technologyAll: ["scikit-learn", "pandas", "Matplotlib"]
-}
-
-export const MovieDatabase: Project = {
-  imgUrl: movie_database,
-  title: "Movie Database",
-  technologyMain: "Java / Hibernate / Jakarta",
-  description: `A database application for movie management realized in Java with Swing, Hibernate and Jakarta during databases course.`,
-  codeUrl: "https://github.com/schehat/movie_database",
-  demoUrl: "",
-  technologyAll: ["Java", "Hibernate", "Jakarta", "Swing"],
-};
-
-export const SudokuWithSolver : Project =  {
-  imgUrl: sudoku_with_solver,
-  title: "Sudoku With Solver",
-  technologyMain: "Python / Pygame",
-  description: `Creating a Sudoku game with Python and Pygame and using backtracking to solve it`,
-  codeUrl: "https://github.com/schehat/pygame_projects/tree/main/sudoko_with_solver",
-  demoUrl: "",
-  technologyAll: ["Python", "Pygame"]
+    technologyAll: ["C++", "QT", "OpenGL"]
 }
 
 export const TheWorldHardestGame: Project = {

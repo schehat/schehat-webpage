@@ -1,13 +1,15 @@
 import ProjectsCard from "@/src/components/projects/ProjectsCard";
 import {
+  AIInEducation,
   ANPR,
   ChessScene,
-  DecisionTree,
+  CNNImageSegmentation,
+  EmotionClassificationBERT,
   FlappyBird,
-  ImageManipulation,
-  MovieDatabase,
-  SudokuWithSolver,
-  TheWorldHardestGame
+  GeneticAlgorithmAFVRP,
+  SeqToSeqModel,
+  SingleCellEDA,
+  TheWorldHardestGame,
 } from "@/src/constant/Projects";
 import SectionWrapper from "@/src/hoc/SectionWrapper";
 import { textVariant } from "@/src/utils/motion";
@@ -24,16 +26,46 @@ const Projects = () => {
           <h2 className="py-4">What I&apos;ve Built</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectsCard
+              title={EmotionClassificationBERT.title}
+              img={EmotionClassificationBERT.imgUrl}
+              projectUrl="/projects/emotion-classification-bert"
+              tech={EmotionClassificationBERT.technologyMain}
+            />
+            <ProjectsCard
+              title={SeqToSeqModel.title}
+              img={SeqToSeqModel.imgUrl}
+              projectUrl="/projects/seq-to-seq-model"
+              tech={SeqToSeqModel.technologyMain}
+            />
+            <ProjectsCard
+              title={CNNImageSegmentation.title}
+              img={CNNImageSegmentation.imgUrl}
+              projectUrl="/projects/cnn-image-segmentation"
+              tech={CNNImageSegmentation.technologyMain}
+            />
+            <ProjectsCard
+              title={AIInEducation.title}
+              img={AIInEducation.imgUrl}
+              projectUrl="/projects/ai-in-education"
+              tech={AIInEducation.technologyMain}
+            />
+            <ProjectsCard
+              title={SingleCellEDA.title}
+              img={SingleCellEDA.imgUrl}
+              projectUrl="/projects/single-cell-eda"
+              tech={SingleCellEDA.technologyMain}
+            />
+            <ProjectsCard
+              title={GeneticAlgorithmAFVRP.title}
+              img={GeneticAlgorithmAFVRP.imgUrl}
+              projectUrl="/projects/genetic-algorithm-afvrp"
+              tech={GeneticAlgorithmAFVRP.technologyMain}
+            />
+            <ProjectsCard
               title={ANPR.title}
               img={ANPR.imgUrl}
               projectUrl="/projects/anpr"
               tech={ANPR.technologyMain}
-            />
-            <ProjectsCard
-              title={ChessScene.title}
-              img={ChessScene.imgUrl}
-              projectUrl="/projects/chess-scene"
-              tech={ChessScene.technologyMain}
             />
             <ProjectsCard
               title={FlappyBird.title}
@@ -42,28 +74,10 @@ const Projects = () => {
               tech={FlappyBird.technologyMain}
             />
             <ProjectsCard
-              title={ImageManipulation.title}
-              img={ImageManipulation.imgUrl}
-              projectUrl="/projects/image-manipulation"
-              tech={ImageManipulation.technologyMain}
-            />
-            <ProjectsCard
-              title={DecisionTree.title}
-              img={DecisionTree.imgUrl}
-              projectUrl="/projects/decision-tree"
-              tech={DecisionTree.technologyMain}
-            />
-            <ProjectsCard
-              title={MovieDatabase.title}
-              img={MovieDatabase.imgUrl}
-              projectUrl="/projects/movie-database"
-              tech={MovieDatabase.technologyMain}
-            />
-            <ProjectsCard
-              title={SudokuWithSolver.title}
-              img={SudokuWithSolver.imgUrl}
-              projectUrl="/projects/sudoku-with-solver"
-              tech={SudokuWithSolver.technologyMain}
+              title={ChessScene.title}
+              img={ChessScene.imgUrl}
+              projectUrl="/projects/chess-scene"
+              tech={ChessScene.technologyMain}
             />
             <ProjectsCard
               title={TheWorldHardestGame.title}

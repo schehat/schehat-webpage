@@ -29,7 +29,7 @@ export const experiences : Experience[] = [
     ]
   },
   {
-    title: "Tutor C/C++",
+    title: "Student Assistant",
     companyName: "Hochschule Hannover",
     icon: hsh,
     iconBg: "#FFFFFF",

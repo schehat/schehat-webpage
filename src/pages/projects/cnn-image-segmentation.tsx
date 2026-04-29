@@ -2,27 +2,31 @@ import CodeButton from "@/src/components/projects/project/CodeButton";
 import ProjectDescription from "@/src/components/projects/project/ProjectDescription";
 import ProjectHeader from "@/src/components/projects/project/ProjectHeader";
 import TechnologyBar from "@/src/components/projects/project/TechnologyBar";
-import { MovieDatabase } from "@/src/constant/Projects";
+import { CNNImageSegmentation } from "@/src/constant/Projects";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowCircleLeft } from "react-icons/fa";
 
-const movie_database = () => {
+const cnn_image_segmentation = () => {
   return (
     <div className="w-full">
       <ProjectHeader
-        imgUrl={MovieDatabase.imgUrl}
-        title={MovieDatabase.title}
-        technologyMain={MovieDatabase.technologyMain}
+        imgUrl={CNNImageSegmentation.imgUrl}
+        title={CNNImageSegmentation.title}
+        technologyMain={CNNImageSegmentation.technologyMain}
       />
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <ProjectDescription description={MovieDatabase.description} />
-          <Link href={MovieDatabase.codeUrl} target="_blank" rel="noreferrer">
+          <ProjectDescription description={CNNImageSegmentation.description} />
+          <Link
+            href={CNNImageSegmentation.codeUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             <CodeButton />
           </Link>
         </div>
-        <TechnologyBar technologies={MovieDatabase.technologyAll} />
+        <TechnologyBar technologies={CNNImageSegmentation.technologyAll} />
         <Link href="/#projects">
           <FaArrowCircleLeft className="scale-[2] ml-2" />
         </Link>
@@ -30,7 +34,7 @@ const movie_database = () => {
       <div className="flex justify-center items-center">
         <Image
           className="rounded-xl object-contain h-[500px]"
-          src={MovieDatabase.imgUrl}
+          src={CNNImageSegmentation.imgUrl}
           alt="/"
         />
       </div>
@@ -38,4 +42,4 @@ const movie_database = () => {
   );
 };
 
-export default movie_database;
+export default cnn_image_segmentation;
